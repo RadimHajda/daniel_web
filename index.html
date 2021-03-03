@@ -1,0 +1,306 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Hello, AMPs</title>
+  <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+  <meta name="viewport" content="width=device-width">
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
+  <style>
+    @font-face {
+      font-family: "Bahnschrift";
+      src: url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot");
+    }
+
+    .body {
+      background-color: white;
+      font-family: "Bahnschrift";
+
+    }
+
+
+    .title {
+      padding: 0.5em;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .header-mobile {
+      height: auto;
+      width: 100%;
+      display: flex;
+      background-color: white;
+      padding-bottom: 2px;
+      padding-top: 5px;
+      text-decoration: none;
+      inline-size: block;
+      text-align: center;
+
+    }
+
+    .logo-image {
+
+      margin-left: 10px;
+      margin-right: 5px;
+      padding-top: 10px;
+
+    }
+
+    .name {
+      padding-left: 5px;
+      margin-right: auto;
+      font-size: 18px;
+
+
+
+    }
+
+    .home-text {
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 25px;
+      text-align: center;
+      display: block;
+
+    }
+
+    .copyright {
+      padding-top: 5px;
+      width: 100%;
+      background-color: grey;
+      display: block;
+      font-size: 80%;
+      text-align: center;
+      position: fixed;
+      bottom: 0px;
+    }
+
+
+
+    .description {
+      height: auto;
+      width: 100%;
+      padding-top: 2px;
+      background-color: grey;
+      text-align: center;
+    }
+
+    .hamburger {
+      padding-right: 10px;
+      font-size: 50px;
+      text-align: right;
+    }
+
+    .close {
+      padding-right: 10px;
+      font-size: 50px;
+      text-align: right;
+    }
+
+    #sidebar1 {
+      width: 60%;
+      position: relative;
+      background-color: white;
+    }
+
+    .sidebar-nav {
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 25px;
+      text-align: left;
+      list-style-type: none;
+
+    }
+
+    .ul-cl {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .smImg {
+      max-height: 50%;
+      max-width: 50%;
+      
+    }
+  </style>
+</head>
+
+<body class="body">
+  <header>
+
+    <div class="header-mobile">
+
+      <div class="logo-image">
+        <a href="index.html">
+          <amp-img src="/Loga/logo.png" width="100" height="50" alt="logo" layout="fixed"> </amp-img>
+        </a>
+
+      </div>
+      <div class="name">
+        <h2>Robert Daniel</h2>
+      </div>
+      <div class="hamburger" role="button" on="tap:sidebar1" tabindex="0">☰
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+
+    <amp-sidebar id="sidebar1" side="right" layout="nodisplay">
+      <div class="close" role="button" on="tap:sidebar1.toggle" tabindex="0">✕</div>
+      <nav class="sidebar-nav">
+        <ul class="ul-cl">
+          <li><a href="#">
+              <h3>Domů</h3>
+            </a> </li>
+          <li>
+            <a href="sluzby.html">
+              <h3>Služby</h3>
+            </a>
+          </li>
+          <li>
+            <a href="cenik.html">
+              <h3>Ceník</h3>
+            </a>
+          </li>
+          <li>
+            <a href="kontakt.html">
+              <h3>Kontakt</h3>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </amp-sidebar>
+
+
+
+    </div>
+
+
+
+    <div class="description">
+      <h2 class="title">Řemeslné práce v domácnosti</h2>
+    </div>
+
+  </header>
+
+  <div class="home-text">
+    <p>
+      Zajišťuji práce v oblasti řemeslných činností ve vaší domácnosti, ať už potřebujete drobné zednické práce,
+      vymalovat pokoje, poskládat nábytek, nebo další úkony v domácnosti, se kterými si nevíte rady, nebo se do nich
+      sami
+      nechcete pouštět. Veškeré práce jsou prováděny s cílem dosažení co nejlepšího finálního výsledku a vždy po
+      dohodě
+      s vámi.
+    </p>
+  </div>
+
+
+  <footer>
+    <div class="copyright">
+      All content copyright Robert Daniel © 2021 • All rights reserved.
+    </div>
+
+  </footer>
+</body>
+
+
+
+</html>

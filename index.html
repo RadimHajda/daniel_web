@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <title>Hello, AMPs</title>
+  <title>Robert Daniel - Řemeslné práce v domácnosti </title>
   <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
   <meta name="viewport" content="width=device-width">
   <script type="application/ld+json">
@@ -86,8 +86,11 @@
     </style>
   </noscript>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
   <style>
     @font-face {
       font-family: "Bahnschrift";
@@ -96,7 +99,7 @@
 
     .body {
       background-color: white;
-      font-family: "Bahnschrift";
+      font-family: "Ubuntu";
 
     }
 
@@ -141,11 +144,11 @@
 
     .home-text {
       padding-top: 5px;
+      padding-bottom: 5px;
       padding-left: 5px;
       padding-right: 5px;
       font-size: 25px;
       text-align: center;
-      display: block;
 
     }
 
@@ -210,10 +213,16 @@
       color: black;
     }
 
-    .smImg {
-      max-height: 50%;
-      max-width: 50%;
-      
+    #carousel1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 800px;
+      max-height: 600px;
+    }
+
+    .amp-carousel-button {
+      display: none
     }
   </style>
 </head>
@@ -224,7 +233,7 @@
     <div class="header-mobile">
 
       <div class="logo-image">
-        <a href="index.html">
+        <a href="/">
           <amp-img src="Loga/logo.png" width="100" height="50" alt="logo" layout="fixed"> </amp-img>
         </a>
 
@@ -244,7 +253,7 @@
       <div class="close" role="button" on="tap:sidebar1.toggle" tabindex="0">✕</div>
       <nav class="sidebar-nav">
         <ul class="ul-cl">
-          <li><a href="#">
+          <li><a href="/">
               <h3>Domů</h3>
             </a> </li>
           <li>
@@ -281,7 +290,18 @@
 
   </header>
 
+
   <div class="home-text">
+    <amp-carousel id="carousel1" type="slides" width="600" height="300" layout="responsive" loop autoplay delay="4000"
+      controls>
+      <amp-img src="Loga/1.jpg" width="600" height="300" layout="responsive"></amp-img>
+      <amp-img src="Loga/2.jpg" width="600" height="300" layout="responsive"></amp-img>
+      <amp-img src="Loga/3.jpg" width="600" height="300" layout="responsive"></amp-img>
+      <amp-img src="Loga/4.jpg" width="600" height="300" layout="responsive"></amp-img>
+      <amp-img src="Loga/5.jpg" width="600" height="300" layout="responsive"></amp-img>
+      <amp-img src="Loga/6.jpg" width="600" height="300" layout="responsive"></amp-img>
+
+    </amp-carousel>
     <p>
       Zajišťuji práce v oblasti řemeslných činností ve vaší domácnosti, ať už potřebujete drobné zednické práce,
       vymalovat pokoje, poskládat nábytek, nebo další úkony v domácnosti, se kterými si nevíte rady, nebo se do nich
